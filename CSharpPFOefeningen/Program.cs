@@ -6,7 +6,9 @@ public class Program
     static void Main(string[] args)
     {
         //Variables.VariableOefening();
-       Datum.DatumOefening();
+        //Datum.DatumOefening();
+        Selecties.SelectieOefening();
+
 
     }
 }
