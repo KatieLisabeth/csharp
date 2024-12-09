@@ -1,0 +1,15 @@
+/Users/katerynalisabeth/VDAB/csharp/CSharpPFOefeningen/bin/Debug/net8.0/CSharpPFOefeningen
+/Users/katerynalisabeth/VDAB/csharp/CSharpPFOefeningen/bin/Debug/net8.0/CSharpPFOefeningen.deps.json
+/Users/katerynalisabeth/VDAB/csharp/CSharpPFOefeningen/bin/Debug/net8.0/CSharpPFOefeningen.runtimeconfig.json
+/Users/katerynalisabeth/VDAB/csharp/CSharpPFOefeningen/bin/Debug/net8.0/CSharpPFOefeningen.dll
+/Users/katerynalisabeth/VDAB/csharp/CSharpPFOefeningen/bin/Debug/net8.0/CSharpPFOefeningen.pdb
+/Users/katerynalisabeth/VDAB/csharp/CSharpPFOefeningen/obj/Debug/net8.0/CSharpPFOefeningen.GeneratedMSBuildEditorConfig.editorconfig
+/Users/katerynalisabeth/VDAB/csharp/CSharpPFOefeningen/obj/Debug/net8.0/CSharpPFOefeningen.AssemblyInfoInputs.cache
+/Users/katerynalisabeth/VDAB/csharp/CSharpPFOefeningen/obj/Debug/net8.0/CSharpPFOefeningen.AssemblyInfo.cs
+/Users/katerynalisabeth/VDAB/csharp/CSharpPFOefeningen/obj/Debug/net8.0/CSharpPFOefeningen.csproj.CoreCompileInputs.cache
+/Users/katerynalisabeth/VDAB/csharp/CSharpPFOefeningen/obj/Debug/net8.0/CSharpPFOefeningen.dll
+/Users/katerynalisabeth/VDAB/csharp/CSharpPFOefeningen/obj/Debug/net8.0/refint/CSharpPFOefeningen.dll
+/Users/katerynalisabeth/VDAB/csharp/CSharpPFOefeningen/obj/Debug/net8.0/CSharpPFOefeningen.pdb
+/Users/katerynalisabeth/VDAB/csharp/CSharpPFOefeningen/obj/Debug/net8.0/CSharpPFOefeningen.genruntimeconfig.cache
+/Users/katerynalisabeth/VDAB/csharp/CSharpPFOefeningen/obj/Debug/net8.0/ref/CSharpPFOefeningen.dll
+/Users/katerynalisabeth/VDAB/csharp/CSharpPFOefeningen/obj/Debug/net8.0/CSharpPFOefeningen.sourcelink.json
