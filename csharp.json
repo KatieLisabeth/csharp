@@ -1,0 +1,9 @@
+{
+    "Console WriteLine": {
+        "prefix": "cw",
+        "body": [
+            "Console.WriteLine($\"${1:Message}\");"
+        ],
+        "description": "Inserts a Console.WriteLine statement"
+    }
+}
