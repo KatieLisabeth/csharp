@@ -5,7 +5,8 @@ public class Program
 {
     static void Main(string[] args)
     {
-        Variables.VariableOefening();
+        //Variables.VariableOefening();
+       Datum.DatumOefening();
 
     }
 }
