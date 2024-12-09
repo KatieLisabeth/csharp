@@ -1,0 +1,14 @@
+/Users/katerynalisabeth/VDAB/csharp/CSharpPFCursus/bin/Debug/net8.0/CSharpPFCursus
+/Users/katerynalisabeth/VDAB/csharp/CSharpPFCursus/bin/Debug/net8.0/CSharpPFCursus.deps.json
+/Users/katerynalisabeth/VDAB/csharp/CSharpPFCursus/bin/Debug/net8.0/CSharpPFCursus.runtimeconfig.json
+/Users/katerynalisabeth/VDAB/csharp/CSharpPFCursus/bin/Debug/net8.0/CSharpPFCursus.dll
+/Users/katerynalisabeth/VDAB/csharp/CSharpPFCursus/bin/Debug/net8.0/CSharpPFCursus.pdb
+/Users/katerynalisabeth/VDAB/csharp/CSharpPFCursus/obj/Debug/net8.0/CSharpPFCursus.GeneratedMSBuildEditorConfig.editorconfig
+/Users/katerynalisabeth/VDAB/csharp/CSharpPFCursus/obj/Debug/net8.0/CSharpPFCursus.AssemblyInfoInputs.cache
+/Users/katerynalisabeth/VDAB/csharp/CSharpPFCursus/obj/Debug/net8.0/CSharpPFCursus.AssemblyInfo.cs
+/Users/katerynalisabeth/VDAB/csharp/CSharpPFCursus/obj/Debug/net8.0/CSharpPFCursus.csproj.CoreCompileInputs.cache
+/Users/katerynalisabeth/VDAB/csharp/CSharpPFCursus/obj/Debug/net8.0/CSharpPFCursus.dll
+/Users/katerynalisabeth/VDAB/csharp/CSharpPFCursus/obj/Debug/net8.0/refint/CSharpPFCursus.dll
+/Users/katerynalisabeth/VDAB/csharp/CSharpPFCursus/obj/Debug/net8.0/CSharpPFCursus.pdb
+/Users/katerynalisabeth/VDAB/csharp/CSharpPFCursus/obj/Debug/net8.0/CSharpPFCursus.genruntimeconfig.cache
+/Users/katerynalisabeth/VDAB/csharp/CSharpPFCursus/obj/Debug/net8.0/ref/CSharpPFCursus.dll
