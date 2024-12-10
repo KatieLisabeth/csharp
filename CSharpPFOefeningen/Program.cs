@@ -7,7 +7,8 @@ public class Program
     {
         //Variables.VariableOefening();
         //Datum.DatumOefening();
-        Selecties.SelectieOefening();
+        //Selecties.SelectieOefening();
+        Functies.FunctiesOefeningen();
 
 
     }
