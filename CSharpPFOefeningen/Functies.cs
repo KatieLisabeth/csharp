@@ -104,10 +104,12 @@ public class Functies
         double cm = double.Parse(Console.ReadLine()!);
         Console.WriteLine($"{cm} cm = {CmNaarInch(cm)} inches");
 
-        double CmNaarInch(double cm){
-            return cm /CentimeterPerInch;
+        double CmNaarInch(double cm)
+        {
+            return cm / CentimeterPerInch;
         }
-        double InchNaarCm(double inch){
+        double InchNaarCm(double inch)
+        {
             return inch * CentimeterPerInch;
         }
         void TekenLijn(int lenghte, char tenen = '-')
@@ -118,7 +120,7 @@ public class Functies
             }
             Console.WriteLine();
         }
-
+        InchNaarCm(3);
 
     }
 }
