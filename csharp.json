@@ -5,5 +5,12 @@
             "Console.WriteLine($\"${1:Message}\");"
         ],
         "description": "Inserts a Console.WriteLine statement"
+    },
+    "Console ReadLine": {
+        "prefix": "cr",
+        "body": [
+            "string ${1:variableName} = Console.ReadLine()! ;"
+        ],
+        "description": "Inserts a Console.ReadLine statement"
     }
 }
