@@ -8,7 +8,8 @@ public class Program
         //Variables.VariableOefening();
         //Datum.DatumOefening();
         //Selecties.SelectieOefening();
-        Functies.FunctiesOefeningen();
+        // Functies.FunctiesOefeningen();
+        Arrays.ArraysOefening();
 
 
     }
