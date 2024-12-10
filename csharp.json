@@ -2,14 +2,14 @@
     "Console WriteLine": {
         "prefix": "cw",
         "body": [
-            "Console.WriteLine($\"${1:Message}\");"
+            "System.Console.WriteLine($\"${1:Message}\");"
         ],
         "description": "Inserts a Console.WriteLine statement"
     },
     "Console ReadLine": {
         "prefix": "cr",
         "body": [
-            "string ${1:variableName} = Console.ReadLine()! ;"
+            "string ${1:variableName} = Console.ReadLine()!"
         ],
         "description": "Inserts a Console.ReadLine statement"
     }
