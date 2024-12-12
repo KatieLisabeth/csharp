@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VDAB")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+556aef24c8c187a8e09073b1d0cca8b7ef638a6f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a413512af3184ccd9c6de68410068ca55a5a46ca")]
 [assembly: System.Reflection.AssemblyProductAttribute("CSharpPFOefeningen")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CSharpPFOefeningen")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

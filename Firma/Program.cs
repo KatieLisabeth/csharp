@@ -2,6 +2,10 @@
 using Firma;
 using Firma.Materiaal;
 using Firma.Personeel;
+using MaterialStatus = Firma.Materiaal.Status;
+using PersoneelStatus = Firma.Personeel.Status;
+
+
 public class Program
 {
     static void Main(string[] args)
@@ -9,7 +13,7 @@ public class Program
         Object[] dingen = new Object[4];
         dingen[0] = new Arbeider("Asterix", DateTime.Today, Geslacht.Man, 24.79m, 3);
         dingen[1] = new Fotokopiemachine("Racekyo", 500, 0.025m);
-        dingen[2] = null;
+        //dingen[2] = null;
         dingen[3] = "C#";
 
         static void ToonGegevens(Object? obj)
@@ -78,5 +82,18 @@ public class Program
                     break;
             }
         }
+
+        // Firma.Materiaal.Status statusBoorMachine = Firma.Materiaal.Status.Werkend;
+        // Firma.Personeel.Status statusChef = Firma.Personeel.Status.HogerKader;
+        // Console.WriteLine(statusBoorMachine);
+        // Console.WriteLine(statusChef);
+
+         MaterialStatus statusBoorMachine = MaterialStatus.Werkend;
+         PersoneelStatus statusChef = PersoneelStatus.HogerKader;
+
+         Console.WriteLine(statusBoorMachine);
+         Console.WriteLine(statusChef);
+
+
     }
 }

@@ -7,13 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpPFCursus", "CSharpPFC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpPFOefeningen", "CSharpPFOefeningen\CSharpPFOefeningen.csproj", "{BB385FEE-D373-4ACC-A53D-EBBC1D6C67FF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Firma", "Firma\Firma.csproj", "{8EA7BD1F-8516-40B8-A2C3-6C824250848D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{20F61BD3-4EDD-47C9-A944-114E80120F0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -24,5 +23,12 @@ Global
 		{BB385FEE-D373-4ACC-A53D-EBBC1D6C67FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB385FEE-D373-4ACC-A53D-EBBC1D6C67FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB385FEE-D373-4ACC-A53D-EBBC1D6C67FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EA7BD1F-8516-40B8-A2C3-6C824250848D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EA7BD1F-8516-40B8-A2C3-6C824250848D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EA7BD1F-8516-40B8-A2C3-6C824250848D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EA7BD1F-8516-40B8-A2C3-6C824250848D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal

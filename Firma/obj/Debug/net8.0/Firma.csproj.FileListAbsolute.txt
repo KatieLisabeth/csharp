@@ -1,0 +1,15 @@
+/Users/katerynalisabeth/VDAB/csharp/Firma/bin/Debug/net8.0/Firma
+/Users/katerynalisabeth/VDAB/csharp/Firma/bin/Debug/net8.0/Firma.deps.json
+/Users/katerynalisabeth/VDAB/csharp/Firma/bin/Debug/net8.0/Firma.runtimeconfig.json
+/Users/katerynalisabeth/VDAB/csharp/Firma/bin/Debug/net8.0/Firma.dll
+/Users/katerynalisabeth/VDAB/csharp/Firma/bin/Debug/net8.0/Firma.pdb
+/Users/katerynalisabeth/VDAB/csharp/Firma/obj/Debug/net8.0/Firma.GeneratedMSBuildEditorConfig.editorconfig
+/Users/katerynalisabeth/VDAB/csharp/Firma/obj/Debug/net8.0/Firma.AssemblyInfoInputs.cache
+/Users/katerynalisabeth/VDAB/csharp/Firma/obj/Debug/net8.0/Firma.AssemblyInfo.cs
+/Users/katerynalisabeth/VDAB/csharp/Firma/obj/Debug/net8.0/Firma.csproj.CoreCompileInputs.cache
+/Users/katerynalisabeth/VDAB/csharp/Firma/obj/Debug/net8.0/Firma.sourcelink.json
+/Users/katerynalisabeth/VDAB/csharp/Firma/obj/Debug/net8.0/Firma.dll
+/Users/katerynalisabeth/VDAB/csharp/Firma/obj/Debug/net8.0/refint/Firma.dll
+/Users/katerynalisabeth/VDAB/csharp/Firma/obj/Debug/net8.0/Firma.pdb
+/Users/katerynalisabeth/VDAB/csharp/Firma/obj/Debug/net8.0/Firma.genruntimeconfig.cache
+/Users/katerynalisabeth/VDAB/csharp/Firma/obj/Debug/net8.0/ref/Firma.dll
