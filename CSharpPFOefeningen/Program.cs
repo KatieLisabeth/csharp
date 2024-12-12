@@ -97,90 +97,102 @@ public class Program
         //    var worker = onzeWerknemers[teller] = new Werknemer();
         //    Console.WriteLine(worker);
         // }
-        int eerste = 10, tweede = 20;
-        Verwisselaar verwisselaar = new Verwisselaar();
-        verwisselaar.Verwissel(ref eerste, ref tweede);
-        Console.WriteLine("eerste was 10 nu =>: " + eerste);
-        Console.WriteLine("tweede was 20 nu =>: " + tweede);
+        // int eerste = 10, tweede = 20;
+        // Verwisselaar verwisselaar = new Verwisselaar();
+        // verwisselaar.Verwissel(ref eerste, ref tweede);
+        // Console.WriteLine("eerste was 10 nu =>: " + eerste);
+        // Console.WriteLine("tweede was 20 nu =>: " + tweede);
 
-        Werknemer ik = new Werknemer();
-        Console.WriteLine(ik.GetInfo());
-        Console.WriteLine(ik.Naam.ToUpper());
+        // Werknemer ik = new Werknemer();
+        // Console.WriteLine(ik.GetInfo());
+        // Console.WriteLine(ik.Naam.ToUpper());
 
-        Werknemer werknemer = new Werknemer("Asterix", new DateTime(2024, 1, 1), Geslacht.Man);
-        Console.WriteLine(werknemer.GetInfo());
+        // Werknemer werknemer = new Werknemer("Asterix", new DateTime(2024, 1, 1), Geslacht.Man);
+        // Console.WriteLine(werknemer.GetInfo());
 
-        Werknemer jij = new()
-        {
-            Naam = "Obelix",
-            InDienst = new DateTime(2024, 1, 26),
-            Geslacht = Geslacht.Man,
-
-
-
-        };
-        Console.WriteLine("Jij: " + jij.GetInfo()); //personeelsfeest 1,1,0001 date not set
-
-        Werknemer2 werknemer2 = new Werknemer2("", new DateTime(2020, 12, 12), Geslacht.Man);
-        Console.WriteLine(werknemer2.GetInfo());
-
-        Werknemer isa = new()
-        {
-            Naam = "Isa",
-            InDienst = new DateTime(2018, 1, 26),
-            Geslacht = Geslacht.Vrow
-        };
-        Werknemer.Personeelsfeest = new DateOnly(2024, 12, 12);
-        Console.WriteLine(Werknemer.Personeelsfeest);
-        //ik.Naam = "Isabella";
-        Console.WriteLine(isa.GetInfo());
-        Console.WriteLine(jij.GetInfo());
+        // Werknemer jij = new()
+        // {
+        //     Naam = "Obelix",
+        //     InDienst = new DateTime(2024, 1, 26),
+        //     Geslacht = Geslacht.Man,
 
 
-        Arbeider arbeider = new("Asterix", new DateTime(2024, 1, 1), Geslacht.Man, 24.79m, 3);
-        Console.WriteLine(arbeider.GetInfo());
 
-        Console.WriteLine("Bediende");
-        Bediende bediende = new("Asterix", new DateTime(2024, 1, 1), Geslacht.Man, 2400.79m);
-        Console.WriteLine(bediende.GetInfo());
+        // };
+        // Console.WriteLine("Jij: " + jij.GetInfo()); //personeelsfeest 1,1,0001 date not set
+
+        // Werknemer2 werknemer2 = new Werknemer2("", new DateTime(2020, 12, 12), Geslacht.Man);
+        // Console.WriteLine(werknemer2.GetInfo());
+
+        // Werknemer isa = new()
+        // {
+        //     Naam = "Isa",
+        //     InDienst = new DateTime(2018, 1, 26),
+        //     Geslacht = Geslacht.Vrow
+        // };
+        // Werknemer.Personeelsfeest = new DateOnly(2024, 12, 12);
+        // Console.WriteLine(Werknemer.Personeelsfeest);
+        // //ik.Naam = "Isabella";
+        // Console.WriteLine(isa.GetInfo());
+        // Console.WriteLine(jij.GetInfo());
 
 
-        Manager manager = new Manager("Katie", new DateTime(2024, 1, 1), Geslacht.Vrow, 24.79m, 7000m);
-        Manager mezelf = manager;
-        Manager dezelfde = new Manager("Katie", new DateTime(2024, 1, 1), Geslacht.Vrow, 24.79m, 7000m);
-        //Before implemented equals function in manager class
+        // Arbeider arbeider = new("Asterix", new DateTime(2024, 1, 1), Geslacht.Man, 24.79m, 3);
+        // Console.WriteLine(arbeider.GetInfo());
+
+        // Console.WriteLine("Bediende");
+        // Bediende bediende = new("Asterix", new DateTime(2024, 1, 1), Geslacht.Man, 2400.79m);
+        // Console.WriteLine(bediende.GetInfo());
+
+
+        // Manager manager = new Manager("Katie", new DateTime(2024, 1, 1), Geslacht.Vrow, 24.79m, 7000m);
+        // Manager mezelf = manager;
+        // Manager dezelfde = new Manager("Katie", new DateTime(2024, 1, 1), Geslacht.Vrow, 24.79m, 7000m);
+        // //Before implemented equals function in manager class
+        // // Console.WriteLine(manager.Equals(mezelf)); //True
+        // // Console.WriteLine(manager.Equals(dezelfde)); //False
+        // //After implemented equals function in manager class
         // Console.WriteLine(manager.Equals(mezelf)); //True
-        // Console.WriteLine(manager.Equals(dezelfde)); //False
-        //After implemented equals function in manager class
-        Console.WriteLine(manager.Equals(mezelf)); //True
-        Console.WriteLine(manager.Equals(dezelfde)); //True
-                                                     // Console.WriteLine(manager.GetInfo());
-                                                     // Console.WriteLine(manager is Manager);
-                                                     // Console.WriteLine(manager is Bediende);
-                                                     // Console.WriteLine(manager is Werknemer);
-                                                     // Console.WriteLine(manager.ToString());
-                                                     // Console.WriteLine(manager is string);
-                                                     // Console.WriteLine(manager is Manager);
+        // Console.WriteLine(manager.Equals(dezelfde)); //True
+        //                                              // Console.WriteLine(manager.GetInfo());
+        //                                              // Console.WriteLine(manager is Manager);
+        //                                              // Console.WriteLine(manager is Bediende);
+        //                                              // Console.WriteLine(manager is Werknemer);
+        //                                              // Console.WriteLine(manager.ToString());
+        //                                              // Console.WriteLine(manager is string);
+        //                                              // Console.WriteLine(manager is Manager);
 
-        // Console.WriteLine(manager.ToString());
-        object obj = new Werknemer("Asterix", DateTime.Today, Geslacht.Man);
-        Werknemer deAndere = (Werknemer)obj;
-        Console.WriteLine(deAndere);
+        // // Console.WriteLine(manager.ToString());
+        // object obj = new Werknemer("Asterix", DateTime.Today, Geslacht.Man);
+        // Werknemer deAndere = (Werknemer)obj;
+        // Console.WriteLine(deAndere);
 
-        Werknemer one = new Bediende("One", DateTime.Today, Geslacht.Man, 1500m);
-        Werknemer two = new Arbeider("Two", DateTime.Today, Geslacht.Man, 10m, 1);
-        Bediende? hij;
+        // Werknemer one = new Bediende("One", DateTime.Today, Geslacht.Man, 1500m);
+        // Werknemer two = new Arbeider("Two", DateTime.Today, Geslacht.Man, 10m, 1);
+        // Bediende? hij;
 
-        hij = (Bediende)one;
-        Console.WriteLine(hij.GetInfo());
+        // hij = (Bediende)one;
+        // Console.WriteLine(hij.GetInfo());
 
-        hij = one as Bediende;
-        if (hij != null)
-            Console.WriteLine(hij.GetInfo());
+        // hij = one as Bediende;
+        // if (hij != null)
+        //     Console.WriteLine(hij.GetInfo());
 
-        hij = two as Bediende;
-        if (hij != null)
-            Console.WriteLine(hij.GetInfo());
+        // hij = two as Bediende;
+        // if (hij != null)
+        //     Console.WriteLine(hij.GetInfo());
+
+        ///abstract classes
+        ///
+        Arbeider asterix = new Arbeider("Asterix", DateTime.Today, Geslacht.Man, 24.79m, 3);
+        Bediende obelix = new Bediende("Obelix", new DateTime(1995, 1, 1), Geslacht.Man, 24.79m);
+        Manager idefix = new Manager("Idefix", new DateTime(1995, 1, 1), Geslacht.Man, 24.79m, 7000m);
+        Console.WriteLine(asterix.Premie);
+        Console.WriteLine(obelix.Premie);
+        Console.WriteLine(idefix.Premie);
+
+        Console.WriteLine("Windows" + 1+ 1 );
+
     }
 
 
