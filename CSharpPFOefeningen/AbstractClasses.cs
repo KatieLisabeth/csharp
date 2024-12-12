@@ -1,21 +1,28 @@
 using System;
-using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
 using System.Dynamic;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace CSharpPFCursus;
+
 public enum Geslacht
 {
     Man, Vrow, X
 }
-
-public abstract class Werknemer
+public interface IKost
 {
-    // Personeelsfeest
+    public bool Menselijk { get; }
+    public decimal BerekenKostprijs();
+}
+
+
+public abstract class Werknemer : IKost
+{
+
+
+    public bool Menselijk
+    {
+        get => true;
+    }
+    public abstract decimal BerekenKostprijs();
+
 
     public static DateOnly Personeelsfeest { get; set; }
     private static DateOnly personeelsfeest
@@ -24,7 +31,7 @@ public abstract class Werknemer
         get => personeelsfeest;
     }
 
-    //Naam
+    //     //Naam
     private string? naam;
     public string Naam
 
@@ -33,8 +40,6 @@ public abstract class Werknemer
         {
             return naam!;
         }
-        // init //Init-only property or indexer 'Werknemer.Naam' can only be assigned in an object initializer, or on 'this' or 'base' in an instance constructor or an 'init' accessor.
-        // init => naam = !string.IsNullOrWhiteSpace(value) ? value : "onbekende naam";
         set
         {
             if (value != string.Empty)
@@ -70,8 +75,11 @@ public abstract class Werknemer
             return InDienst.Month == DateTime.Today.Month && InDienst.Day == DateTime.Today.Day;
         }
     }
-    // int? aantalKinderen = null;
-    // bool? gehuwd;
+
+
+
+
+
     public int? AantalKinderen { get; set; }
     public bool? Gehuwd { get; set; }
     //virtual make it accessible in another class to do override
@@ -82,17 +90,7 @@ public abstract class Werknemer
          $"InDienst: {InDienst}\n" +
          $"Personeelsfeest: {Personeelsfeest}";
     }
-    // [SetsRequiredMembers]
-    public Werknemer() : this("Onbekend", DateTime.Today, Geslacht.Man) { }
-    // public Werknemer()
-    // {
 
-    //     Naam = "Onbekend";
-    //     InDienst = DateTime.Today;
-    //     Geslacht = Geslacht.Man;
-
-    // }
-    //[SetsRequiredMembers]
     public Werknemer(string naam, DateTime inDienst, Geslacht geslacht)
     {
 
@@ -102,20 +100,6 @@ public abstract class Werknemer
 
     }
 
-    public override string ToString()
-    {
-        return $"{Naam} {Geslacht}";
-    }
-    public override bool Equals(object? obj)
-    {
-        // if (obj is Werknemer)
-        // {
-        //     Werknemer deAndere = (Werknemer)obj;
-        //     return this.Naam == deAndere.Naam;
-        // }
-        // else return false;
-        return obj is Werknemer werknemer && Naam == werknemer.Naam;
-    }
 
     public override int GetHashCode()
     {
@@ -124,28 +108,7 @@ public abstract class Werknemer
 
     }
 
-    public abstract decimal Premie
-    {
-        get;
-    }
 
-}
-public class LijnenTrekker
-{
-    // public void TekenLijn(int lengte)
-    // {
-    //     for (int teller = 0; teller < lengte; teller++)
-    //         Console.Write("-");
-    //     Console.WriteLine();
-    // }
-    // public void TekenLijn(int lengte, char teken)
-    // {
-    //     for (int teller = 0; teller < lengte; teller++)
-    //         Console.Write(teken);
-    //     Console.WriteLine();
-    // }
-
-    //Overloading
     public void TekenLijn(int lengte, char teken)
     {
         for (int teller = 0; teller < lengte; teller++)
@@ -160,6 +123,49 @@ public class LijnenTrekker
     {
         TekenLijn(79);
     }
+
+    // public decimal BerekenKostprijs()
+    // {
+    //     throw new NotImplementedException();
+    // }
+
+    public WerkRegime? Regime { get; set; }
+
+    // public bool Menselijk => throw new NotImplementedException();
+
+    public class WerkRegime
+    {
+        public enum RegimeType
+        {
+            Voltijds,
+            Viervijfde,
+            Halftijds
+        }
+
+        public required RegimeType Type { get; set; }
+
+        public int AantalVacantiedagen
+        {
+            get
+            {
+                return Type switch
+                {
+                    RegimeType.Voltijds => 25,
+                    RegimeType.Viervijfde => 20,
+                    RegimeType.Halftijds => 12,
+                    _ => 0
+                };
+            }
+        }
+
+
+        public override string ToString()
+        {
+            return Type.ToString();
+        }
+
+    }
+
 }
 
 public class Omzetter
@@ -181,23 +187,8 @@ public class Verwisselaar
 }
 
 
-public class Werknemer2(string naam, DateTime indienst, Geslacht geslacht)
-{
-    public string Naam { get; set; } = !string.IsNullOrWhiteSpace(naam) ? naam : "Onbekend";
-    public DateTime InDienst { get; set; } = indienst;
-    public Geslacht Geslacht { get; set; } = geslacht;
 
-    public bool VerjaarAncien
-    {
-        get { return InDienst.Month == DateTime.Today.Month && InDienst.Day == DateTime.Today.Day; }
-    }
-    public string GetInfo()
-    {
-        return $"Naam: {Naam}\n" +
-        $"Geslacht: {Geslacht}\n" +
-        $"InDienst: {InDienst}\n";
-    }
-}
+
 
 public class Arbeider : Werknemer
 {
@@ -223,6 +214,8 @@ public class Arbeider : Werknemer
         }
     }
 
+
+
     public override string GetInfo()
     {
         return $"{base.GetInfo()}\n" +
@@ -238,9 +231,10 @@ public class Arbeider : Werknemer
         Uurloon = uurloon;
         Ploegenstelsel = ploegenstelsel;
     }
-    public override decimal Premie
+
+    public override decimal BerekenKostprijs()
     {
-        get => Uurloon * 150m;
+        return Uurloon * 2000m;
     }
 
 }
@@ -273,10 +267,12 @@ public class Bediende : Werknemer
     {
         return $"{base.ToString()} {Wedde} euro/maand";
     }
-    public override decimal Premie
+
+    public override decimal BerekenKostprijs()
     {
-        get => Wedde * 2m;
+        return Wedde * 12m;
     }
+
 
 }
 
@@ -310,10 +306,46 @@ public class Manager : Bediende
     {
         return $"{base.ToString()} Bonus: {Bonus}";
     }
-
-    public override decimal Premie
+    public override decimal BerekenKostprijs()
     {
-        get => Bonus * 3m;
+        return base.BerekenKostprijs() + Bonus;
     }
+
+
+}
+
+public class Fotokopiemachine : IKost
+{
+    private int aantalGekopieeerdeBlz;
+    public int AantalGekopieeerdeBlz
+    {
+        get => aantalGekopieeerdeBlz;
+        set
+        {
+            if (value >= 0)
+                aantalGekopieeerdeBlz = value;
+
+        }
+    }
+    private decimal kostPerBlz;
+    public decimal KostPerBlz
+    {
+        get => kostPerBlz;
+        set
+        {
+            if (value > 0)
+                kostPerBlz = value;
+        }
+    }
+    public string SerieNr { get; init; }
+
+    public Fotokopiemachine(string serieNr, int aantalGekopieeerdeBlz, decimal kostPerBlz)
+    {
+        SerieNr = serieNr;
+        AantalGekopieeerdeBlz = aantalGekopieeerdeBlz;
+        KostPerBlz = kostPerBlz;
+    }
+    public bool Menselijk => false;
+    public decimal BerekenKostprijs() => AantalGekopieeerdeBlz * KostPerBlz;
 
 }
